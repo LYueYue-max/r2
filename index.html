@@ -90,7 +90,7 @@
       height: 2px;
       background: var(--yellow);
       transform: scaleX(0);
-      transition: transform .25s ease-out;
+      transition: transform .25 ease-out;
     }
     .nav-links a:hover::after {
       transform: scaleX(1);
@@ -148,7 +148,7 @@
       inset: -14px;
       border: 2.5px dashed rgba(43,127,216,0.25);
       border-radius: 50%;
-      animation: heroSpin 25s linear infinite;
+      animation: heroSpin 25 linear infinite;
     }
     .hero-cluster .avatar-img {
       width: 100%; height: 100%;
@@ -733,15 +733,15 @@
     .reveal {
       opacity: 0;
       transform: translateY(32px);
-      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-                  transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: opacity 0.7 cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.7 cubic-bezier(0.16, 1, 0.3, 1);
     }
     .reveal.visible { opacity: 1; transform: none; }
-    .reveal-d1 { transition-delay: 0.1s; }
-    .reveal-d2 { transition-delay: 0.2s; }
-    .reveal-d3 { transition-delay: 0.3s; }
-    .reveal-d4 { transition-delay: 0.4s; }
-    .reveal-d5 { transition-delay: 0.5s; }
+    .reveal-d1 { transition-delay: 0.1; }
+    .reveal-d2 { transition-delay: 0.2; }
+    .reveal-d3 { transition-delay: 0.3; }
+    .reveal-d4 { transition-delay: 0.4; }
+    .reveal-d5 { transition-delay: 0.5; }
 
     @media (prefers-reduced-motion: reduce) {
       .reveal { opacity: 1; transform: none; transition: none; }
@@ -792,8 +792,8 @@
       <a href="#logic">核心业务</a>
       <a href="#scenes">各类服务</a>
       <a href="#workflow">工作流</a>
-      <a href="#brand">品牌基因</a>
-      <a href="#checklist">质量检查</a>
+      <a href="https://store.steampowered.com/">STEAM下载</a>
+      <a href="https://lyueyue-max.github.io/Download-site/">Minecraft光影</a>
       <a href="https://lyueyue-max.github.io/r3/" target="_blank">Minecraft专站</a>
     </div>
   </nav>
@@ -887,7 +887,7 @@
       <div class="workflow-layout">
         <div class="workflow-side reveal">
           <span class="big-num">3</span>
-          <span class="section-number">04</span>
+          <span class="section-number">03</span>
           <h2 class="section-title">工作流</h2>
           <p style="font-size: 0.88rem; color: var(--ink-light); margin-top: 1rem; line-height: 1.8;">----------------------</p>
         </div>
@@ -940,6 +940,7 @@
   </section>
 
   <!-- ====== SECTION 5: 品牌基因 ====== -->
+  <!--
   <section class="section section--alt" id="brand">
     <div class="brand-split">
       <div class="brand-left reveal">
@@ -952,7 +953,7 @@
       </div>
       <div class="brand-right reveal reveal-d1">
         <!-- Colors -->
-        <div style="margin-bottom: 8px;">
+    <!--    <div style="margin-bottom: 8px;">
           <span style="font-family: 'Caveat', cursive; font-size: 1.1rem; color: var(--ink-faint);">IP三色 ↓</span>
         </div>
         <div class="color-row">
@@ -980,7 +981,7 @@
           </div>
         </div>
         <!-- Fonts -->
-        <div style="margin-top: 12px; margin-bottom: 8px;">
+ <!--       <div style="margin-top: 12px; margin-bottom: 8px;">
           <span style="font-family: 'Caveat', cursive; font-size: 1.1rem; color: var(--ink-faint);">字体 ↓</span>
         </div>
         <div class="font-list">
@@ -1006,7 +1007,7 @@
   </section>
 
   <!-- ====== SECTION 6: 禁忌 ====== -->
-  <section class="section">
+<!--  <section class="section">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-number">06</span>
@@ -1042,7 +1043,7 @@
   </section>
 
   <!-- ====== SECTION 7: 质量检查 ====== -->
-  <section class="section section--alt" id="checklist">
+<!--  <section class="section section--alt" id="checklist">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-number">07</span>
@@ -1088,6 +1089,7 @@
       </div>
     </div>
   </section>
+  
 
   <!-- ====== SECTION 8: Fork指南 ====== -->
   <section class="section">
